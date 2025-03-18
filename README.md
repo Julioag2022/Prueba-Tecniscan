@@ -84,7 +84,7 @@ La aplicación Angular consume los endpoints de la API para realizar operaciones
 ## Capturas de Pantalla
 
 ### Ingreso de Números y Selección de Operación
-![Ingreso de Números](https://drive.google.com/file/d/1hVHQDS5pnuGxxRYaAayjCwN6ymMun8FU/view?usp=sharing)
+![Ingreso de Números](https://i.postimg.cc/htxCWtkj/Whats-App-Image-2025-03-17-at-19-34-53.jpg)
 
 ### Botón Calcular y Resultado
 ![Botón Calcular y Resultado](https://drive.google.com/file/d/1I8C8OMV2TxHk22DzroyTpTYALDYIsbfT/view?usp=sharing)
