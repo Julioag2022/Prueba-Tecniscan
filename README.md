@@ -1,77 +1,93 @@
 # ArithmeticApp
 
-Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) versión 18.0.7.
-
-## Descripción
-
-ArithmeticApp es una aplicación web Angular que interactúa con una API de C# para realizar operaciones aritméticas.
+Este proyecto fue desarrollado como parte de una prueba técnica para evaluar habilidades en desarrollo web y backend. Consiste en una aplicación web Angular que interactúa con una API de C# para realizar operaciones aritméticas.
 
 ## Estructura del Proyecto
 
-El proyecto está organizado de la siguiente manera:
+* `arithmetic-app/`: Contiene la aplicación Angular creada con Angular CLI versión 18.0.7 y desarrollada en Visual Studio Code.
+* `ArithmeticAPI/`: Contiene la API de C# (.NET 8) desarrollada en Visual Studio 2022.
 
-* `arithmetic-app/`: Contiene la aplicación Angular.
-* `ArithmeticAPI/`: Contiene la API de C# (.NET 8).
+## Criterios de Evaluación
+
+* **Funcionalidad:** La aplicación realiza correctamente las operaciones aritméticas y muestra los resultados.
+* **Código:** El código está limpio, organizado y utiliza patrones de diseño adecuados.
+* **Documentación:** Este README proporciona instrucciones claras para ejecutar la aplicación y la API.
+* **Diseño:** La interfaz es sencilla, clara y fácil de usar, con validación de campos de entrada y advertencias.
+* **Interfaz Gráfica:** El formulario tiene una presentación y diseño claros.
 
 ## Aplicación Angular
 
 ### Servidor de Desarrollo
 
-Ejecuta `ng serve` para iniciar el servidor de desarrollo. Navega a `http://localhost:4200/`. La aplicación se recargará automáticamente si cambias alguno de los archivos fuente.
+Ejecuta `ng serve` para iniciar el servidor de desarrollo local. Navega a `http://localhost:4200/` en tu navegador. La aplicación se recargará automáticamente al guardar cambios en los archivos fuente.
 
-### Generación de Código
+### Generación de Componentes y Otros Elementos
 
-Ejecuta `ng generate component component-name` para generar un nuevo componente. También puedes usar `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Utiliza `ng generate component component-name` para crear nuevos componentes. Similarmente, puedes generar directivas, pipes, servicios, clases, guards, interfaces, enums y módulos.
 
-### Construcción
+### Construcción para Producción
 
-Ejecuta `ng build` para construir el proyecto. Los artefactos de construcción se almacenarán en el directorio `dist/`.
+Ejecuta `ng build` para compilar la aplicación. Los archivos resultantes se almacenan en el directorio `dist/`.
 
-### Pruebas Unitarias
+### Pruebas
 
-Ejecuta `ng test` para ejecutar las pruebas unitarias a través de [Karma](https://karma-runner.github.io).
-
-### Pruebas End-to-End
-
-Ejecuta `ng e2e` para ejecutar las pruebas end-to-end a través de una plataforma de tu elección. Para usar este comando, primero debes agregar un paquete que implemente capacidades de pruebas end-to-end.
+* **Pruebas Unitarias:** Ejecuta `ng test` para realizar pruebas unitarias con Karma.
+* **Pruebas End-to-End:** Ejecuta `ng e2e` para pruebas end-to-end (requiere configuración adicional).
 
 ### Ayuda Adicional
 
-Para obtener más ayuda sobre Angular CLI, usa `ng help` o consulta la página [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli).
+Consulta `ng help` o la [Documentación de Angular CLI](https://angular.dev/tools/cli) para más información.
 
 ## API de C#
 
-### Descripción
-
-La API de C# (ArithmeticAPI) proporciona endpoints para realizar operaciones aritméticas.
+Desarrollada en Visual Studio 2022, la API ArithmeticAPI expone endpoints para realizar operaciones aritméticas.
 
 ### Requisitos
 
-* .NET 8 SDK instalado.
+* .NET 8 SDK
 
-### Ejecución de la API
+### Ejecución
 
-1.  Navega al directorio `ArithmeticAPI/`.
-2.  Ejecuta `dotnet run` para iniciar la API.
-3.  La API estará disponible en `http://localhost:5000` (o el puerto configurado).
+1.  Abre el proyecto `ArithmeticAPI` en Visual Studio 2022.
+2.  Ejecuta la API desde Visual Studio o usando `dotnet run` en la terminal dentro del directorio del proyecto.
+3.  La API estará disponible en `https://localhost:7151/api/Arithmetic`.
 
 ### Endpoints
 
-* `/api/sum/{num1}/{num2}`: Suma dos números.
-* `/api/subtract/{num1}/{num2}`: Resta dos números.
-* `/api/multiply/{num1}/{num2}`: Multiplica dos números.
-* `/api/divide/{num1}/{num2}`: Divide dos números.
+* `GET https://localhost:7151/api/Arithmetic/sum/{num1}/{num2}`: Suma dos números.
+* `GET https://localhost:7151/api/Arithmetic/subtract/{num1}/{num2}`: Resta dos números.
+* `GET https://localhost:7151/api/Arithmetic/multiply/{num1}/{num2}`: Multiplica dos números.
+* `GET https://localhost:7151/api/Arithmetic/divide/{num1}/{num2}`: Divide dos números.
 
 ### Interacción con Angular
 
-La aplicación Angular utiliza los endpoints de la API para realizar operaciones aritméticas. Asegúrate de que la API esté en ejecución antes de usar la aplicación Angular.
+La aplicación Angular consume los endpoints de la API para realizar operaciones aritméticas. Asegúrate de que la API esté en ejecución y que la URL en la aplicación Angular esté configurada correctamente.
 
 ## Configuración
 
-* Asegúrate de que la URL de la API en la aplicación Angular esté configurada correctamente para apuntar a la API de C#.
-* Si estás usando variables de entorno para la URL de la API, configúralas adecuadamente.
+* La URL base de la API en la aplicación Angular debe apuntar a `https://localhost:7151/api/Arithmetic`.
+* Si utilizas variables de entorno, asegúrate de configurarlas correctamente en tu entorno de desarrollo y producción.
 
 ## Dependencias
 
-* Asegúrate de ejecutar `npm install` en el directorio `arithmetic-app/` para instalar las dependencias de Angular.
+* Ejecuta `npm install` en el directorio `arithmetic-app/` para instalar las dependencias de Angular.
 * Asegúrate de tener el SDK de .NET 8 instalado para ejecutar la API de C#.
+
+## Notas Adicionales
+
+* La API de C# fue creada utilizando Visual Studio 2022, lo que facilita su desarrollo y depuración.
+* La aplicación Angular se desarrolló en Visual Studio Code, aprovechando su versatilidad y las extensiones disponibles para el desarrollo web.
+* Asegúrate de que tanto la API como la aplicación Angular estén en ejecución para probar la funcionalidad completa del proyecto.
+
+## Capturas de Pantalla
+
+## Capturas de Pantalla
+
+### Ingreso de Números y Selección de Operación
+![Ingreso de Números](https://drive.google.com/file/d/1hVHQDS5pnuGxxRYaAayjCwN6ymMun8FU/view?usp=sharing)
+
+### Botón Calcular y Resultado
+![Botón Calcular y Resultado](https://drive.google.com/file/d/1I8C8OMV2TxHk22DzroyTpTYALDYIsbfT/view?usp=sharing)
+
+### Endpoints de la API
+![Endpoints de la API](https://drive.google.com/file/d/1qXokyxRHpb8xvKuN-XDsb4MaX_5nN3JO/view?usp=sharing)
