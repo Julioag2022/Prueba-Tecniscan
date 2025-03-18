@@ -87,7 +87,7 @@ La aplicación Angular consume los endpoints de la API para realizar operaciones
 ![Ingreso de Números](https://i.postimg.cc/htxCWtkj/Whats-App-Image-2025-03-17-at-19-34-53.jpg)
 
 ### Botón Calcular y Resultado
-![Botón Calcular y Resultado](https://drive.google.com/file/d/1I8C8OMV2TxHk22DzroyTpTYALDYIsbfT/view?usp=sharing)
+![Botón Calcular y Resultado](https://i.postimg.cc/nzMBxdXk/Whats-App-Image-2025-03-17-at-19-37-10.jpg)
 
 ### Endpoints de la API
-![Endpoints de la API](https://drive.google.com/file/d/1qXokyxRHpb8xvKuN-XDsb4MaX_5nN3JO/view?usp=sharing)
+![Endpoints de la API](https://i.postimg.cc/rsrx2pfj/Whats-App-Image-2025-03-17-at-19-38-40.jpg)
