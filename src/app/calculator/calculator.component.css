@@ -1,0 +1,55 @@
+/* Estilo general para el contenedor de la calculadora */
+.container {
+  width: 300px; /* Ancho fijo de 300 píxeles */
+  margin: 50px auto; /* Margen superior e inferior de 50px, centrado horizontalmente */
+  padding: 20px; /* Espacio interno de 20px */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+}
+
+/* Estilo para todas las etiquetas <label> */
+label {
+  display: block; /* Cada etiqueta ocupa una línea completa */
+  margin-bottom: 5px; /* Espacio inferior de 5px debajo de la etiqueta */
+}
+
+/* Estilo para los campos de entrada tipo número y para el selector <select> */
+input[type="number"], select {
+  width: 100%; /* Ocupan todo el ancho disponible */
+  padding: 8px; /* Espacio interno de 8px */
+  margin-bottom: 10px; /* Espacio inferior entre campos */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 4px; /* Bordes ligeramente redondeados */
+  box-sizing: border-box; /* Incluye el padding y el borde dentro del ancho */
+}
+
+/* Estilo para el botón */
+button {
+  background-color: #007bff; /* Azul estilo Bootstrap */
+  color: white; /* Texto blanco */
+  padding: 10px 15px; /* Espacio interno horizontal y vertical */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/* Estilo para el mensaje de error */
+.error {
+  color: red; /* Color rojo para llamar la atención */
+  margin-top: 10px; /* Espacio superior para separarlo de otros elementos */
+}
+
+/* Estilo para mostrar el resultado (puede ser usado con clase opcional) */
+.result {
+  margin-top: 20px; /* Separación superior */
+  text-align: center; /* Centra el texto */
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilo para la imagen del logo */
+.logo {
+  display: block; /* Se comporta como un bloque para poder centrarlo */
+  margin: 0 auto 20px; /* Centra horizontalmente y deja margen inferior */
+  max-width: 150px; /* Ancho máximo de la imagen */
+}

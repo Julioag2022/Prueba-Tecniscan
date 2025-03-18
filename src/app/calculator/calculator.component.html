@@ -1,0 +1,54 @@
+<!-- Contenedor principal de la calculadora -->
+<div class="container">
+
+  <!-- Imagen del logo de la calculadora -->
+  <img src="https://i.ibb.co/M5gwZfzG/logo.png" alt="Logo de la calculadora" class="logo">
+
+  <!-- Formulario que ejecuta la función onSubmit() al enviarse -->
+  <form (ngSubmit)="onSubmit()">
+
+    <!-- Campo para ingresar el primer número -->
+    <div>
+      <label for="num1">Primer Número:</label>
+      <!-- Enlace bidireccional con ngModel: guarda el valor en la variable num1 -->
+      <input type="number" id="num1" [(ngModel)]="num1" name="num1" required />
+    </div>
+
+    <!-- Campo para ingresar el segundo número -->
+    <div>
+      <label for="num2">Segundo Número:</label>
+      <!-- Enlace bidireccional con ngModel: guarda el valor en la variable num2 -->
+      <input type="number" id="num2" [(ngModel)]="num2" name="num2" required />
+    </div>
+
+    <!-- Selector de operación matemática -->
+    <div>
+      <label for="operation">Operación:</label>
+      <!-- Enlace bidireccional con ngModel: guarda el valor en la variable operation -->
+      <select [(ngModel)]="operation" name="operation" id="operation">
+        <!-- Opción para sumar -->
+        <option value="sum">Suma</option>
+        <!-- Opción para restar -->
+        <option value="subtract">Resta</option>
+        <!-- Opción para multiplicar -->
+        <option value="multiply">Multiplicación</option>
+        <!-- Opción para dividir -->
+        <option value="divide">División</option>
+      </select>
+    </div>
+
+    <!-- Botón para enviar el formulario -->
+    <button type="submit">Calcular</button>
+  </form>
+
+  <!-- Muestra el resultado si existe (distinto de null) -->
+  <div *ngIf="result !== null">
+    <h3>Resultado: {{ result }}</h3>
+  </div>
+
+  <!-- Muestra un mensaje de error si existe -->
+  <div *ngIf="error" class="error">
+    <p>{{ error }}</p>
+  </div>
+
+</div>
