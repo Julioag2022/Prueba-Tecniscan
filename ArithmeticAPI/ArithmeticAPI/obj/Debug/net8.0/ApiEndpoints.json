@@ -1,0 +1,86 @@
+[
+  {
+    "ContainingType": "ArithmeticAPI.Controllers.ArithmeticController",
+    "Method": "divide",
+    "RelativePath": "api/Arithmetic/divide",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "num1",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "num2",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ArithmeticAPI.Controllers.ArithmeticController",
+    "Method": "multiply",
+    "RelativePath": "api/Arithmetic/multiply",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "num1",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "num2",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ArithmeticAPI.Controllers.ArithmeticController",
+    "Method": "subtract",
+    "RelativePath": "api/Arithmetic/subtract",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "num1",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "num2",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ArithmeticAPI.Controllers.ArithmeticController",
+    "Method": "sum",
+    "RelativePath": "api/Arithmetic/sum",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "num1",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "num2",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
